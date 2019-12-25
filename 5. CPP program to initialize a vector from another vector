@@ -1,0 +1,18 @@
+// CPP program to initialize a vector from another vector.
+#include<bits/stdc++.h>
+int main()
+{
+    std::vector<int> vect1{10,20,30,40,50};
+    
+    std::vector<int> vect2(vect1.begin(),vect1.end());
+    for(auto elem:vect2)
+    std::cout<<elem<<" ";
+    
+    std::cout<<"\nvect2.size() = "<<vect2.size();
+    std::cout<<" vect2.capacity() = "<<vect2.capacity();
+    return 0;
+}
+
+output:
+10 20 30 40 50                                                                                                        
+vect2.size() = 5 vect2.capacity() = 5
