@@ -1,0 +1,51 @@
+// CPP program to create an empty vector and push values one by one.
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    vector<int> vec1;
+
+    std::cout<<"\n vec1.size() = "<<vec1.size();
+    std::cout<<" vec1.capacity() = "<<vec1.capacity();
+    std::cout<<" vec1.max_size() = "<<vec1.max_size()<<std::endl;
+    vec1.push_back(10);
+    for(auto element:vec1)
+        std::cout<<" "<< element;
+    
+    std::cout<<"\n vec1.size() = "<<vec1.size();
+    std::cout<<" vec1.capacity() = "<<vec1.capacity();
+    std::cout<<" vec1.max_size() = "<<vec1.max_size()<<std::endl;
+    vec1.push_back(20);
+    for(auto element:vec1)
+        std::cout<<" "<< element;
+    
+    std::cout<<"\n vec1.size() = "<<vec1.size();
+    std::cout<<" vec1.capacity() = "<<vec1.capacity();
+    std::cout<<" vec1.max_size() = "<<vec1.max_size()<<std::endl;
+    vec1.push_back(40);
+    for(auto element:vec1)
+        std::cout<<" "<< element;
+    
+    std::cout<<"\n vec1.size() = "<<vec1.size();
+    std::cout<<" vec1.capacity() = "<<vec1.capacity();
+    std::cout<<" vec1.max_size() = "<<vec1.max_size()<<std::endl;
+    vec1.push_back(50);
+    for(auto element:vec1)
+        std::cout<<" "<< element;
+    
+    std::cout<<"\n vec1.size() = "<<vec1.size();
+    std::cout<<" vec1.capacity() = "<<vec1.capacity();
+    std::cout<<" vec1.max_size() = "<<vec1.max_size()<<std::endl;
+    vec1.push_back(60);
+    for(auto element:vec1)
+        std::cout<<" "<< element;
+
+    std::cout<<"\n vec1.size() = "<<vec1.size();
+    std::cout<<" vec1.capacity() = "<<vec1.capacity();
+    std::cout<<" vec1.max_size() = "<<vec1.max_size()<<std::endl;
+    
+    return 0;
+}
