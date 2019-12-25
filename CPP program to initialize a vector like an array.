@@ -1,0 +1,17 @@
+// CPP program to initialize a vector like an array. 
+#include<bits/stdc++.h>
+
+int main()
+{
+    std::vector<int> vect{10,20,30,40,50};
+    for(auto elem:vect)
+    std::cout<<elem<<" ";
+    
+    std::cout<<"\n vect.size() = "<<vect.size();
+    std::cout<<" vect.capacity() = "<<vect.capacity();
+}
+
+
+output:
+10 20 30 40 50                                                                                                        
+ vect.size() = 5 vect.capacity() = 5 
