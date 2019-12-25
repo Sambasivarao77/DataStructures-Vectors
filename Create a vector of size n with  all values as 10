@@ -1,0 +1,31 @@
+//Create a vector of size n with  all values as 10.
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n = 0;
+    std::cin>>n;
+    vector<int> vect(n,10);
+    for(auto elem : vect)
+        std::cout<<elem<<" ";
+    std::cout<<"\n vect.size() = "<<vect.size();
+    std::cout<<" vect.capacity() = "<<vect.capacity();
+    std::cout<<" vect.max_size() = "<<vect.max_size()<<std::endl;
+    
+    vect.push_back(20);
+    for(auto elem:vect)
+        std::cout<<elem<<" ";
+    std::cout<<"\n vect.size() = "<<vect.size();
+    std::cout<<" vect.capacity() = "<<vect.capacity();
+    std::cout<<" vect.max_size() = "<<vect.max_size();
+}
+
+
+
+output:
+5                                                                                                                     
+10 10 10 10 10                                                                                                        
+ vect.size() = 5 vect.capacity() = 5 vect.max_size() = 4611686018427387903                                            
+10 10 10 10 10 20                                                                                                     
+ vect.size() = 6 vect.capacity() = 10 vect.max_size() = 4611686018427387903
