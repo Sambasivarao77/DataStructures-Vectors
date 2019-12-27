@@ -3,7 +3,7 @@
 
 int main()
 {
-    int a[] = {10,20,30,40};
+    int a[] = {1,2,3,4,5,6,7,8,9,10};
     int n = sizeof(a)/sizeof(a[0]);
     
     std::vector<int> vect(a,a+n);
@@ -16,5 +16,5 @@ int main()
 
 
 output:
-10 20 30 40                                                                                                           
- vect.size() = 4 vect.capacity() = 4
+1 2 3 4 5 6 7 8 9 10                                                                                                           
+ vect.size() = 10 vect.capacity() = 10
