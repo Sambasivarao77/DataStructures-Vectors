@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+int main()
+{
+    std::vector<int> vect1{1,2,3,4,5};
+    std::vector<int> vect2{6,7,8,9,10};
+    
+    std::cout<<" vect1.capacity = "<<vect1.capacity();
+    std::cout<<" vect2.capacity = "<<vect2.capacity();
+    
+    vect1.insert(vect1.end(),vect2.begin(),vect2.end());
+    std::cout<<"\n vect1.capacity = "<<vect1.capacity()<<std::endl;
+    
+    for(auto elem:vect1)
+    std::cout<<" "<<elem;
+    return 0;
+}
+
+
+
+Output:
+ vect1.capacity = 5 vect2.capacity = 5                                                                                  
+ vect1.capacity = 10                                                                                                    
+ 1 2 3 4 5 6 7 8 9 10
