@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    vector<int> vect{1,2,3,4,5,6,7,8,9};
+    cout<<"\n1. "<<vect.size()<<" "<<vect.capacity()<<"\n";
+    vect.erase(vect.begin());
+    vect.clear();
+    
+    cout<<"\n2. "<<vect.size()<<" "<<vect.capacity()<<"\n";
+    //vect.push_back(4);
+    for(auto elem: vect)
+     cout<<elem<<" ";
+     
+    cout<<"\n3. "<<vect.size()<<" "<<vect.capacity();
+    
+    vect.shrink_to_fit();
+    cout<<"\n4. "<<vect.size()<<" "<<vect.capacity()<<"\n";
+    
+    return 0;
+}
+
+output:
+1. 9 9                                                                                                                             
+                                                                                                                                   
+2. 0 9                                                                                                                             
+                                                                                                                                   
+3. 0 9                                                                                                                             
+4. 0 0 
