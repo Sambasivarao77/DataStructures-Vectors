@@ -25,3 +25,12 @@ Create Vector
        
      6. vector<vector<int>> vect(4,vector<int>(5,7)); // vect of size 4*5 and all initialized to 7 initially.
     
+
+
+
+Search
+    1.  vector<int>::iterator it = std::find(vect.begin(),vect.end(),searchingInt);
+        if(it != vect.end())
+        cout<<"The value "<<searchingInt<<" found at position "<<it-vect.begin()+1;
+        
+    2. int occuranceCount = std::count(vect.begin(),vect.end(),countElement);
