@@ -1,0 +1,27 @@
+#include<vector>
+
+
+Create Vector
+    1.  std::vector<int> vect; // vector will be created of size = 0  and capacity = 0
+        vect.push_back(0);  // size = 1  and capacity = 1
+        vect.push_back(1);  // size = 2  and capacity = 2
+        vect.push_back(2);  // size = 3  and capacity = 4
+        vect.push_back(3);  // size = 4  and capacity = 4
+        vect.push_back(4);  // size = 5  and capacity = 8
+        ...
+        
+     2. std::vector<int> vect(10,7); // vector will be created of size = 10, capacity = 10 and all values will be initialized to 7 intially.
+        vect.push_back(7); //size = 11 and capacity = 20;
+        
+     3. std::vector<int> vect{1,2,3,4,5,6,7}; // size = 7 and capacity = 7
+        vect.push_back(8);  // size = 8  and capacity = 14 
+    
+     4. int arr[] = {1,2,3,4,5,6,7,8,9};
+        int n = sizeof(arr)/sizeof(arr[0]);
+        std::vector<int> vect(arr,arr+n);
+        
+     5. std::vector<int> vect2{1,2,3,4,5,6,7,,8,9};
+        std::vectot<int> vect(vect2.begin(),vect2.end());
+       
+     6. vector<vector<int>> vect(4,vector<int>(5,7)); // vect of size 4*5 and all initialized to 7 initially.
+    
